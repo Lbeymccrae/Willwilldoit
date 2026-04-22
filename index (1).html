@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Will, Will Do It — Pro Cleanout Solutions. South Jersey's trusted property cleanout team. Estates, rentals, hoarding, full properties. One call. Done.">
+<meta name="keywords" content="property cleanout South Jersey, junk removal Cumberland County, estate cleanout NJ, rental turnover cleanout, hoarding cleanup New Jersey">
+<title>Will, Will Do It | Pro Cleanout Solutions | South Jersey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;600;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green-dark:   #092F10;
+    --green-mid:    #164A13;
+    --green-bright: #74BE2B;
+    --gold:         #C9C925;
+    --gold-light:   #E8E84A;
+    --cream:        #FDFAEB;
+    --dark:         #1B1310;
+    --white:        #FFFFFF;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    background: var(--dark);
+    color: var(--cream);
+    overflow-x: hidden;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    background:
+      linear-gradient(160deg, rgba(9,47,16,0.97) 0%, rgba(22,74,19,0.92) 40%, rgba(9,47,16,0.85) 100%),
+      repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 40px,
+        rgba(201,201,37,0.03) 40px,
+        rgba(201,201,37,0.03) 41px
+      );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 24px 60px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0; right: 0;
+    height: 6px;
+    background: var(--gold);
+  }
+
+  .hero-badge {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--green-dark);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    margin-bottom: 28px;
+    animation: fadeDown 0.6s ease both;
+  }
+
+  .hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(3.5rem, 10vw, 7rem);
+    line-height: 0.9;
+    color: var(--white);
+    letter-spacing: 0.02em;
+    animation: fadeDown 0.7s 0.1s ease both;
+  }
+
+  .hero h1 span {
+    color: var(--gold);
+    display: block;
+  }
+
+  .hero-sub {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(1.1rem, 3vw, 1.5rem);
+    font-weight: 400;
+    color: rgba(253,250,235,0.85);
+    margin: 20px 0 10px;
+    letter-spacing: 0.05em;
+    animation: fadeDown 0.7s 0.2s ease both;
+  }
+
+  .hero-tagline {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-style: italic;
+    color: var(--gold);
+    font-weight: 300;
+    margin-bottom: 40px;
+    animation: fadeDown 0.7s 0.3s ease both;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: fadeDown 0.7s 0.4s ease both;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: var(--green-dark);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 16px 36px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.2s, transform 0.2s;
+    clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+  }
+
+  .btn-primary:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    border: 2px solid rgba(253,250,235,0.4);
+    color: var(--cream);
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 14px 32px;
+    text-decoration: none;
+    display: inline-block;
+    transition: border-color 0.2s, color 0.2s;
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 48px;
+    margin-top: 56px;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: fadeDown 0.7s 0.5s ease both;
+  }
+
+  .hero-stat {
+    text-align: center;
+  }
+
+  .hero-stat-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.8rem;
+    color: var(--gold);
+    line-height: 1;
+  }
+
+  .hero-stat-label {
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(253,250,235,0.6);
+    margin-top: 4px;
+  }
+
+  /* ── PAIN SECTION ── */
+  .pain {
+    background: var(--cream);
+    color: var(--dark);
+    padding: 80px 24px;
+    text-align: center;
+  }
+
+  .section-label {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--green-dark);
+    margin-bottom: 12px;
+  }
+
+  .section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.2rem, 6vw, 3.5rem);
+    line-height: 1;
+    color: var(--green-dark);
+    margin-bottom: 16px;
+  }
+
+  .section-title span { color: var(--gold); }
+
+  .pain-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    max-width: 900px;
+    margin: 48px auto 0;
+    text-align: left;
+  }
+
+  .pain-card {
+    background: var(--white);
+    border-left: 4px solid var(--green-bright);
+    padding: 24px;
+  }
+
+  .pain-card p {
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--dark);
+    line-height: 1.6;
+  }
+
+  /* ── SERVICES ── */
+  .services {
+    background: var(--green-dark);
+    padding: 80px 24px;
+    text-align: center;
+    position: relative;
+  }
+
+  .services::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--gold);
+  }
+
+  .services .section-label { color: var(--gold); }
+  .services .section-title { color: var(--white); }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2px;
+    max-width: 960px;
+    margin: 48px auto 0;
+    background: rgba(201,201,37,0.15);
+  }
+
+  .service-tile {
+    background: rgba(9,47,16,0.8);
+    padding: 32px 20px;
+    text-align: center;
+    transition: background 0.2s;
+  }
+
+  .service-tile:hover {
+    background: rgba(116,190,43,0.15);
+  }
+
+  .service-icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .service-name {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .service-desc {
+    font-size: 0.85rem;
+    color: rgba(253,250,235,0.7);
+    line-height: 1.5;
+  }
+
+  /* ── HOW IT WORKS ── */
+  .how {
+    background: var(--cream);
+    color: var(--dark);
+    padding: 80px 24px;
+    text-align: center;
+  }
+
+  .steps {
+    display: flex;
+    gap: 0;
+    max-width: 900px;
+    margin: 48px auto 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .step {
+    flex: 1;
+    min-width: 160px;
+    padding: 32px 20px;
+    position: relative;
+    text-align: center;
+  }
+
+  .step:not(:last-child)::after {
+    content: '→';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--green-bright);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .step-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5rem;
+    color: var(--green-bright);
+    line-height: 1;
+    opacity: 0.3;
+  }
+
+  .step-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--green-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 8px 0 6px;
+  }
+
+  .step-desc {
+    font-size: 0.85rem;
+    color: rgba(27,19,16,0.65);
+    line-height: 1.5;
+  }
+
+  /* ── WHO WE SERVE ── */
+  .who {
+    background: var(--dark);
+    padding: 80px 24px;
+    text-align: center;
+  }
+
+  .who .section-label { color: var(--gold); }
+  .who .section-title { color: var(--white); }
+
+  .audience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    max-width: 900px;
+    margin: 48px auto 0;
+  }
+
+  .audience-card {
+    border: 1px solid rgba(201,201,37,0.25);
+    padding: 32px 20px;
+    text-align: left;
+    transition: border-color 0.2s, background 0.2s;
+  }
+
+  .audience-card:hover {
+    border-color: var(--gold);
+    background: rgba(201,201,37,0.05);
+  }
+
+  .audience-title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 12px;
+  }
+
+  .audience-card ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .audience-card li {
+    font-size: 0.88rem;
+    color: rgba(253,250,235,0.7);
+    padding: 4px 0;
+    padding-left: 16px;
+    position: relative;
+    line-height: 1.4;
+  }
+
+  .audience-card li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--green-bright);
+    font-size: 0.8rem;
+  }
+
+  /* ── PRICING ── */
+  .pricing {
+    background: var(--green-dark);
+    padding: 80px 24px;
+    text-align: center;
+    position: relative;
+  }
+
+  .pricing::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--gold);
+  }
+
+  .pricing .section-label { color: var(--gold); }
+  .pricing .section-title { color: var(--white); }
+
+  .pricing-note {
+    font-size: 0.95rem;
+    color: rgba(253,250,235,0.65);
+    font-style: italic;
+    margin-top: 8px;
+  }
+
+  .pricing-table {
+    max-width: 700px;
+    margin: 48px auto 0;
+    border: 1px solid rgba(201,201,37,0.2);
+  }
+
+  .pricing-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 18px 24px;
+    border-bottom: 1px solid rgba(201,201,37,0.1);
+    text-align: left;
+    transition: background 0.2s;
+  }
+
+  .pricing-row:hover { background: rgba(116,190,43,0.08); }
+  .pricing-row:last-child { border-bottom: none; }
+
+  .pricing-row.header {
+    background: rgba(201,201,37,0.12);
+    border-bottom: 1px solid rgba(201,201,37,0.3);
+  }
+
+  .pricing-job {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.95rem;
+    color: var(--cream);
+  }
+
+  .pricing-row.header .pricing-job {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-size: 0.8rem;
+  }
+
+  .pricing-range {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--gold);
+    white-space: nowrap;
+    padding-left: 16px;
+  }
+
+  .pricing-row.header .pricing-range {
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .pricing-cta {
+    margin-top: 36px;
+    font-size: 0.95rem;
+    color: rgba(253,250,235,0.6);
+  }
+
+  .pricing-cta strong { color: var(--gold); }
+
+  /* ── CONTACT / CTA ── */
+  .contact {
+    background: var(--cream);
+    color: var(--dark);
+    padding: 80px 24px;
+    text-align: center;
+  }
+
+  .contact .section-title { color: var(--green-dark); }
+  .contact .section-label { color: var(--green-mid); }
+
+  .contact-box {
+    max-width: 600px;
+    margin: 48px auto 0;
+    background: var(--green-dark);
+    padding: 48px 40px;
+    position: relative;
+  }
+
+  .contact-box::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--gold);
+  }
+
+  .contact-phone {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.5rem, 8vw, 4rem);
+    color: var(--gold);
+    letter-spacing: 0.05em;
+    line-height: 1;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.2s;
+  }
+
+  .contact-phone:hover { color: var(--gold-light); }
+
+  .contact-email {
+    font-size: 1rem;
+    color: rgba(253,250,235,0.7);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 24px;
+    letter-spacing: 0.03em;
+    transition: color 0.2s;
+  }
+
+  .contact-email:hover { color: var(--gold); }
+
+  .contact-divider {
+    width: 40px;
+    height: 2px;
+    background: var(--gold);
+    margin: 20px auto;
+  }
+
+  .contact-area {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(253,250,235,0.5);
+  }
+
+  .contact-web {
+    font-size: 0.9rem;
+    color: var(--gold);
+    margin-top: 12px;
+    font-style: italic;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--green-dark);
+    border-top: 3px solid var(--gold);
+    padding: 32px 24px;
+    text-align: center;
+  }
+
+  .footer-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+  }
+
+  .footer-tagline {
+    font-size: 0.8rem;
+    color: rgba(253,250,235,0.4);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-top: 6px;
+  }
+
+  /* ── STICKY PHONE BAR (mobile) ── */
+  .sticky-bar {
+    display: none;
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: var(--gold);
+    color: var(--green-dark);
+    text-align: center;
+    padding: 14px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    z-index: 999;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 640px) {
+    .sticky-bar { display: block; }
+    body { padding-bottom: 56px; }
+    .step:not(:last-child)::after { display: none; }
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(9,47,16,0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 2px solid rgba(201,201,37,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+  }
+
+  .nav-logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4rem;
+    color: var(--gold);
+    letter-spacing: 0.05em;
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+  }
+
+  .nav-links a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(253,250,235,0.7);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--gold); }
+
+  .nav-cta {
+    background: var(--gold);
+    color: var(--green-dark) !important;
+    padding: 6px 16px;
+    font-weight: 700 !important;
+  }
+
+  @media (max-width: 560px) {
+    .nav-links { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Will, Will Do It!</a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#who">Who We Serve</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#contact" class="nav-cta">Get a Quote</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">South Jersey's Trusted Cleanout Team</div>
+  <h1>Will, Will<span>Do It!</span></h1>
+  <p class="hero-sub">Pro Cleanout Solutions — Cumberland County & South Jersey</p>
+  <p class="hero-tagline">From trashed to rent-ready. One call. Done.</p>
+  <div class="hero-ctas">
+    <a href="tel:4842393033" class="btn-primary">📞 Call 484-239-3033</a>
+    <a href="#services" class="btn-secondary">See What We Do</a>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-num">10+</div>
+      <div class="hero-stat-label">Years in South Jersey</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">1</div>
+      <div class="hero-stat-label">Call to get started</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">100%</div>
+      <div class="hero-stat-label">Documented, every job</div>
+    </div>
+  </div>
+</section>
+
+<!-- PAIN -->
+<section class="pain">
+  <p class="section-label">Sound Familiar?</p>
+  <h2 class="section-title">That space has been sitting <span>too long.</span></h2>
+  <div class="pain-grid">
+    <div class="pain-card"><p>"The garage I keep meaning to clear out — it's been years."</p></div>
+    <div class="pain-card"><p>"The tenant left it a disaster and I need it rent-ready fast."</p></div>
+    <div class="pain-card"><p>"The estate has to be cleared and I don't know where to start."</p></div>
+    <div class="pain-card"><p>"My last vendor didn't show up. My timeline is already behind."</p></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <p class="section-label">What We Do</p>
+  <h2 class="section-title">We Handle It <span>Completely.</span></h2>
+  <div class="services-grid">
+    <div class="service-tile">
+      <span class="service-icon">🏠</span>
+      <div class="service-name">Estate Cleanouts</div>
+      <div class="service-desc">Full property clearance — respectful, thorough, documented.</div>
+    </div>
+    <div class="service-tile">
+      <span class="service-icon">🔑</span>
+      <div class="service-name">Rental Turnovers</div>
+      <div class="service-desc">Tenant out. Property cleared. Rent-ready fast.</div>
+    </div>
+    <div class="service-tile">
+      <span class="service-icon">🚪</span>
+      <div class="service-name">Eviction Cleanouts</div>
+      <div class="service-desc">Fast turnaround. Complete removal. No drama.</div>
+    </div>
+    <div class="service-tile">
+      <span class="service-icon">📦</span>
+      <div class="service-name">Hoarding & Heavy Debris</div>
+      <div class="service-desc">We've seen it all. No judgment. Full clearance.</div>
+    </div>
+    <div class="service-tile">
+      <span class="service-icon">🏗️</span>
+      <div class="service-name">Contractor Haul-Away</div>
+      <div class="service-desc">Demo debris, renovation waste, scrap. You build. We haul.</div>
+    </div>
+    <div class="service-tile">
+      <span class="service-icon">🏦</span>
+      <div class="service-name">REO & Bank-Owned</div>
+      <div class="service-desc">Documented, compliant, reliable. Portfolio contracts welcome.</div>
+    </div>
+    <div class="service-tile">
+      <span class="service-icon">🛋️</span>
+      <div class="service-name">Appliance & Furniture</div>
+      <div class="service-desc">Single items to full loads. We handle the heavy lifting.</div>
+    </div>
+    <div class="service-tile">
+      <span class="service-icon">🗑️</span>
+      <div class="service-name">Junk Removal</div>
+      <div class="service-desc">Garages, basements, attics, yards. Any size load.</div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <p class="section-label">The Process</p>
+  <h2 class="section-title" style="color:var(--green-dark)">Simple. <span style="color:var(--green-bright)">Fast.</span> Done.</h2>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">01</div>
+      <div class="step-title">You Call or Text</div>
+      <div class="step-desc">Tell us what you need cleared. We come to you for a free on-site quote.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <div class="step-title">Clear Price</div>
+      <div class="step-desc">You get a firm price before anything moves. No surprises on the invoice.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <div class="step-title">We Show Up</div>
+      <div class="step-desc">On schedule. Before photos taken. Work begins.</div>
+    </div>
+    <div class="step">
+      <div class="step-num">04</div>
+      <div class="step-title">It's Done</div>
+      <div class="step-desc">After photos documented. Walkthrough with you. Cleared and gone.</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO WE SERVE -->
+<section class="who" id="who">
+  <p class="section-label">Who We Work With</p>
+  <h2 class="section-title">Built for the <span style="color:var(--gold)">people who need it done right.</span></h2>
+  <div class="audience-grid">
+    <div class="audience-card">
+      <div class="audience-title">Homeowners</div>
+      <ul>
+        <li>Estate and family home clearouts</li>
+        <li>Garage, basement & attic cleanouts</li>
+        <li>Downsizing and moving prep</li>
+        <li>Hoarding situations</li>
+        <li>Pre-sale property clearance</li>
+      </ul>
+    </div>
+    <div class="audience-card">
+      <div class="audience-title">Landlords & PMs</div>
+      <ul>
+        <li>Tenant turnover cleanouts</li>
+        <li>Eviction property clearance</li>
+        <li>Multi-property accounts</li>
+        <li>Fast turnaround scheduling</li>
+        <li>Volume pricing available</li>
+      </ul>
+    </div>
+    <div class="audience-card">
+      <div class="audience-title">Real Estate Investors</div>
+      <ul>
+        <li>Pre-renovation full clearance</li>
+        <li>Flip property cleanouts</li>
+        <li>REO and distressed assets</li>
+        <li>Portfolio contract pricing</li>
+        <li>Before & after documentation</li>
+      </ul>
+    </div>
+    <div class="audience-card">
+      <div class="audience-title">Contractors & Trades</div>
+      <ul>
+        <li>Demo and renovation debris haul</li>
+        <li>Scrap metal and appliance removal</li>
+        <li>Mid-project site cleanouts</li>
+        <li>Recurring haul accounts</li>
+        <li>Same-week scheduling</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <p class="section-label">Transparent Pricing</p>
+  <h2 class="section-title">No Surprises. <span style="color:var(--gold)">Ever.</span></h2>
+  <p class="pricing-note">All jobs quoted on-site after we see the full scope. Free estimate — always.</p>
+  <div class="pricing-table">
+    <div class="pricing-row header">
+      <div class="pricing-job">Job Type</div>
+      <div class="pricing-range">Typical Range</div>
+    </div>
+    <div class="pricing-row">
+      <div class="pricing-job">Single room / small load</div>
+      <div class="pricing-range">$200–$400</div>
+    </div>
+    <div class="pricing-row">
+      <div class="pricing-job">Garage or basement cleanout</div>
+      <div class="pricing-range">$400–$800</div>
+    </div>
+    <div class="pricing-row">
+      <div class="pricing-job">Full home or estate cleanout</div>
+      <div class="pricing-range">$1,500–$3,000+</div>
+    </div>
+    <div class="pricing-row">
+      <div class="pricing-job">Contractor haul-away (per load)</div>
+      <div class="pricing-range">$150–$500</div>
+    </div>
+    <div class="pricing-row">
+      <div class="pricing-job">Hoarding / heavy debris</div>
+      <div class="pricing-range">Custom quote</div>
+    </div>
+    <div class="pricing-row">
+      <div class="pricing-job">REO / bank-owned properties</div>
+      <div class="pricing-range">Portfolio rates</div>
+    </div>
+  </div>
+  <p class="pricing-cta">Managing multiple properties? Ask about <strong>recurring account pricing.</strong></p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <p class="section-label">Get Started Today</p>
+  <h2 class="section-title" style="color:var(--green-dark)">Ready to get it <span style="color:var(--green-bright)">done?</span></h2>
+  <div class="contact-box">
+    <a href="tel:4842393033" class="contact-phone">484-239-3033</a>
+    <a href="mailto:lakia@willwilldoit.net" class="contact-email">lakia@willwilldoit.net</a>
+    <div class="contact-divider"></div>
+    <div class="contact-area">Serving Cumberland County & South Jersey</div>
+    <div class="contact-web">willwilldoit.net</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-name">Will, Will Do It!</div>
+  <div class="footer-tagline">Pro Cleanout Solutions &nbsp;·&nbsp; South Jersey &nbsp;·&nbsp; willwilldoit.net</div>
+</footer>
+
+<!-- STICKY MOBILE BAR -->
+<a href="tel:4842393033" class="sticky-bar">📞 Tap to Call — 484-239-3033</a>
+
+</body>
+</html>
